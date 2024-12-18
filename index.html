@@ -290,16 +290,17 @@
     <h2 style="text-align: center;">Thông Tin Liên Hệ</h2>
 
   
+ 
     <!-- Nguyễn Ngọc Bích Tuyền -->
     <div class="contact-card">
         <h3>Nguyễn Ngọc Bích Tuyền</h3>
         <a href="https://www.facebook.com/profile.php?id=100049275588055" target="_blank">
-            <button style="background-color:#4267B2; color:white; border:none; padding:10px; border-radius:5px; margin-right:5px;">
+            <button class="animal-btn" style="background-color:#4267B2;">
                 🐱 Facebook
             </button>
         </a>
         <a href="https://haibang2007.github.io/Bich-Tuyen/" target="_blank">
-            <button style="background-color:#28a745; color:white; border:none; padding:10px; border-radius:5px;">
+            <button class="animal-btn" style="background-color:#FADADD;">
                 🐶 Profile
             </button>
         </a>
@@ -309,12 +310,12 @@
     <div class="contact-card">
         <h3>Phan Ngọc Hải Băng</h3>
         <a href="https://www.facebook.com/haibang.phanngoc.7" target="_blank">
-            <button style="background-color:#4267B2; color:white; border:none; padding:10px; border-radius:5px; margin-right:5px;">
+            <button class="animal-btn" style="background-color:#4267B2;">
                 🐭 Facebook
             </button>
         </a>
         <a href="https://haibang2007.github.io/Hai-Bang/" target="_blank">
-            <button style="background-color:#28a745; color:white; border:none; padding:10px; border-radius:5px;">
+            <button class="animal-btn" style="background-color:#ADD8E6;">
                 🐹 Profile
             </button>
         </a>
@@ -324,12 +325,12 @@
     <div class="contact-card">
         <h3>Nguyễn Ngọc Viết Chương</h3>
         <a href="https://www.facebook.com/vjetchwq" target="_blank">
-            <button style="background-color:#4267B2; color:white; border:none; padding:10px; border-radius:5px; margin-right:5px;">
+            <button class="animal-btn" style="background-color:#4267B2;">
                 🐼 Facebook
             </button>
         </a>
         <a href="https://haibang2007.github.io/Viet-Chuong/" target="_blank">
-            <button style="background-color:#28a745; color:white; border:none; padding:10px; border-radius:5px;">
+            <button class="animal-btn" style="background-color:#28a745;">
                 🐻 Profile
             </button>
         </a>
@@ -339,17 +340,55 @@
     <div class="contact-card">
         <h3>Nguyễn Thái Duy</h3>
         <a href="https://www.facebook.com/profile.php?id=100069083947590" target="_blank">
-            <button style="background-color:#4267B2; color:white; border:none; padding:10px; border-radius:5px; margin-right:5px;">
+            <button class="animal-btn" style="background-color:#4267B2;">
                 🐘 Facebook
             </button>
         </a>
         <a href="https://haibang2007.github.io/Thai-Duy/" target="_blank">
-            <button style="background-color:#28a745; color:white; border:none; padding:10px; border-radius:5px;">
+            <button class="animal-btn" style="background-color:#00FFFF;">
                 🦊 Profile
             </button>
         </a>
     </div>
 </section>
+
+<style>
+    .animal-btn {
+        width: 250px; /* Nút vuông */
+        height: 50px;
+        border: none;
+        border-radius: 10px; /* Bo tròn nhẹ góc */
+        font-size: 24px; /* Kích thước emoji */
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        cursor: pointer;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Hiệu ứng bóng */
+        transition: transform 0.2s ease;
+    }
+
+    .animal-btn:hover {
+        transform: scale(1.1); /* Nút phóng to khi hover */
+    }
+
+    .contact-card {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    h3 {
+        font-family: Arial, sans-serif;
+        color: #555;
+    }
+</style>
 
 
 
