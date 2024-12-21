@@ -140,6 +140,16 @@
         .fish:nth-child(5) {
             animation-delay: 8s;
         }
+
+#clock {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
     </style>
 </head>
 <body>
@@ -441,6 +451,26 @@
         <div class="fish" style="top: 60%;"></div>
         <div class="fish" style="top: 80%;"></div>
         <div class="fish" style="top: 100%;"></div>
+
+
+    
+<div id="clock" style="font-size: 20px; color: white;"></div>
+
     </footer>
+<script>
+    function updateClock() {
+        var now = new Date();
+        var hours = now.getHours().toString().padStart(2, '0'); // Lấy giờ và thêm 0 nếu là số nhỏ hơn 10
+        var minutes = now.getMinutes().toString().padStart(2, '0'); // Lấy phút và thêm 0 nếu là số nhỏ hơn 10
+        var seconds = now.getSeconds().toString().padStart(2, '0'); // Lấy giây và thêm 0 nếu là số nhỏ hơn 10
+
+        var timeString = hours + ':' + minutes + ':' + seconds; // Chuỗi thời gian
+        document.getElementById('clock').textContent = timeString; // Cập nhật thời gian trong phần tử #clock
+    }
+
+    setInterval(updateClock, 1000); // Cập nhật đồng hồ mỗi giây
+    updateClock(); // Gọi ngay lập tức để đồng hồ không bị trễ một giây
+</script>
+
 </body>
 </html>
