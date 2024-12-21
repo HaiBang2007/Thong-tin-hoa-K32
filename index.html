@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -97,6 +95,50 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fish {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: swim 10s infinite linear;
+        }
+
+        @keyframes swim {
+            0% {
+                left: -50px;
+                top: 50%;
+                transform: scaleX(1);
+            }
+            100% {
+                left: 100%;
+                top: 50%;
+                transform: scaleX(-1);
+            }
+        }
+
+        .fish:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .fish:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .fish:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        .fish:nth-child(4) {
+            animation-delay: 6s;
+        }
+
+        .fish:nth-child(5) {
+            animation-delay: 8s;
         }
     </style>
 </head>
@@ -300,7 +342,7 @@
             </button>
         </a>
         <a href="https://haibang2007.github.io/Bich-Tuyen/" target="_blank">
-            <button class="animal-btn" style="background-color:#FADADD;">
+            <button class="animal-btn" style="background-color:#28a745;">
                 🐶 Profile
             </button>
         </a>
@@ -315,7 +357,7 @@
             </button>
         </a>
         <a href="https://haibang2007.github.io/Hai-Bang/" target="_blank">
-            <button class="animal-btn" style="background-color:#ADD8E6;">
+            <button class="animal-btn" style="background-color:#28a745;">
                 🐹 Profile
             </button>
         </a>
@@ -345,7 +387,7 @@
             </button>
         </a>
         <a href="https://haibang2007.github.io/Thai-Duy/" target="_blank">
-            <button class="animal-btn" style="background-color:#00FFFF;">
+            <button class="animal-btn" style="background-color:#28a745;">
                 🦊 Profile
             </button>
         </a>
@@ -394,6 +436,11 @@
 
     <footer>
         <p>Lớp Hóa K32 - Những kỷ niệm khó quên!</p>
+<div class="fish" style="top: 20%;"></div>
+        <div class="fish" style="top: 40%;"></div>
+        <div class="fish" style="top: 60%;"></div>
+        <div class="fish" style="top: 80%;"></div>
+        <div class="fish" style="top: 100%;"></div>
     </footer>
 </body>
 </html>
